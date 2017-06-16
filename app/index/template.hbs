@@ -1,3 +1,9 @@
 <h1> Welcome to Quora 2.0 </h1>
 
 Post a question and our rich and diverse user database will find an answer for you.
+
+<ul>
+  {{#each model as |question|}}
+    <li>{{question.query}} by {{question.query}}</li>
+  {{/each}}
+</ul>  
