@@ -6,12 +6,12 @@ var questions = [{
   query: "Why Though",
   details: "I was one of the richest men in the world now am broke"
 }, {
-  id: 1,
+  id: 2,
   name: "Pablo Escobar",
   query: "Why Though",
   details: "I was one of the richest men in the world now am broke"
 }, {
-  id: 1,
+  id: 3,
   name: "Pablo Escobar",
   query: "Why Though",
   details: "I was one of the richest men in the world now am broke"

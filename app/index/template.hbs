@@ -3,7 +3,7 @@
 Post a question and our rich and diverse user database will find an answer for you.
 
 <ul>
-  {{#each model as |question|}}
-    <li>{{question.query}} by {{question.query}}</li>
+  {{#each model as |questions|}}
+    <li>{{questions.query}} by {{questions.name}}</li>
   {{/each}}
-</ul>  
+</ul>
