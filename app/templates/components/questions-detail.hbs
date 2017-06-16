@@ -1,3 +1,13 @@
-Asked by {{questions.name}} due to the occurrence of {{questions.details}}
+{{questions.query}} Asked by {{questions.name}} due to the occurrence of {{questions.details}}
+
+<br>
+
+<button {{action 'delete' questions}}>Delete</button>
+<h3> All Answers</h3>
+<ul>
+  {{#each model.answers as |answers|}}
+    {{answer-tile answer=answer destroyAnswer="destroyAnswer"}}
+  {{/each}}
+</ul>
 
 <button {{action 'delete' questions}}>Delete</button>
