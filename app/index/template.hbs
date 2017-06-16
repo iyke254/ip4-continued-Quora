@@ -4,7 +4,7 @@ Post a question and our rich and diverse user database will find an answer for y
 
 <ul>
   {{#each model as |questions|}}
-    {{question-tile questions=questions destroyQuestions="destroyQuestions"}}
+    {{question-tile questions=questions update="update" destroyQuestions="destroyQuestions"}}
   {{/each}}
 </ul>
 
