@@ -23,9 +23,9 @@ module.exports = function(environment) {
       databaseURL: "https://ip4s-e8865.firebaseio.com",
       projectId: "ip4s-e8865",
       storageBucket: "",
-      messagingSenderId: "282756868097"
+
     };
-    }
+
 
     APP: {
       // Here you can pass flags/options to your application instance
