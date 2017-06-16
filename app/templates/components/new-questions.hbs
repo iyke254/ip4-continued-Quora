@@ -1,4 +1,24 @@
 {{#if addNewQuestions}}
-<p></p>
+<h1> New Questions</h1>
+<div>
+  <form>
+    <div class="form-group">
+      <label for="name">Name</label>
+      {{input value=name id="name"}}
+    </div>
+    <div class="form-group">
+      <label for="query">Question</label>
+      {{input value=query id="query"}}
+    </div>
+    <div class="form-group">
+      <label for="details">More on the Question</label>
+      {{input value=details id="details"}}
+    </div>
+
+    <button{{action 'saveQuestions1'}}>Post</button>
+  </form>
+</div>
+{{else}}
 
 <button{{action 'questionsFormShow'}}>Ask a Question</button>
+{{/if}}
