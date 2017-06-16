@@ -5,8 +5,13 @@ export default Ember.Route.extend({
     return this.store.findAll('questions');
   },
   actions: {
+    saveQuestions3(params) {
+      var newQuestions = this.store.createRecord('questions', params);
+      newQuestions.save();
+      this.transitionTo('index');
+    },
     destroyQuestions(questions) {
-      questions.DestroyQuestions();
+      questions.destroyRecord();
       this.transitionTo('index');
     }
   }
