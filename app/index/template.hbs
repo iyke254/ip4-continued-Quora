@@ -4,6 +4,6 @@ Post a question and our rich and diverse user database will find an answer for y
 
 <ul>
   {{#each model as |questions|}}
-    {{question-tile question=question}}
+    {{question-tile question=question destroyQuestions="destroyQuestions"}}
   {{/each}}
 </ul>
