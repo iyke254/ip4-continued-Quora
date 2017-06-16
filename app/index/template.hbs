@@ -2,10 +2,21 @@
 
 Post a question and our rich and diverse user database will find an answer for you.
 
+
+<h3> Take a look at some of the questions!</h3>
 <ul>
-  {{#each model as |questions|}}
+  {{#each model.questions as |questions|}}
     {{question-tile questions=questions update="update" destroyQuestions="destroyQuestions"}}
   {{/each}}
 </ul>
 
 {{new-questions saveQuestions2="saveQuestions3"}}
+
+<h3> All Answers</h3>
+<ul>
+  {{#each model.answers as |answers|}}
+    <li>{{answers.reply}} by {{answers.author}}</li>
+  {{/each}}
+</ul>
+
+<hr>
