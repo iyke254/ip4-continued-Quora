@@ -24,7 +24,7 @@ module.exports = function(environment) {
       projectId: "ip4s-e8865",
       storageBucket: "",
 
-    };
+    },
 
 
     APP: {
