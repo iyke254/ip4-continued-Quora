@@ -2,12 +2,12 @@
 
 <br>
 
-<button {{action 'delete' questions}}>Delete</button>
+
 <h3> All Answers</h3>
 <ul>
-  {{#each model.answers as |answers|}}
+  {{#each questions.answers as |answer|}}
     {{answer-tile answer=answer destroyAnswer="destroyAnswer"}}
   {{/each}}
 </ul>
 
-<button {{action 'delete' questions}}>Delete</button>
+<button {{action 'delete' questions}}>Delete Question</button>
