@@ -6,7 +6,7 @@ Post a question and our rich and diverse user database will find an answer for y
 <h3> Take a look at some of the questions!</h3>
 <ul>
   {{#each model.questions as |questions|}}
-    {{question-tile questions=questions update="update" destroyQuestions="destroyQuestions"}}
+    {{question-popularity questions}}{{question-tile questions=questions update="update" destroyQuestions="destroyQuestions"}}
   {{/each}}
 </ul>
 
